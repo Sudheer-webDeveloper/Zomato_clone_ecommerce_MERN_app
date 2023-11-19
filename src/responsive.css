@@ -1,0 +1,302 @@
+@media only screen and (max-width: 1350px) {
+  .menu-items-2{
+    position: absolute;
+    top: 300px;
+  }
+  main .img-2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main .img-2 .gallery-2 {
+    flex-direction: row;
+  }
+
+  main .img-2 .gallery-2 img {
+    height: 130px;
+  }
+  .menu-items-2 {
+    transform: translate(60%, -40%);
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .menu-items-2 {
+    transform: translate(45%, -40%);
+  }
+
+  .card-3 {
+    gap: 9px;
+    margin-bottom: 18px;
+  }
+
+  .menu_card-3 .card-3 img {
+    width: 110px;
+    height: 110px;
+  }
+  .menu-items-3 {
+    width: 450px;
+  }
+  .content-3 {
+    gap: 5px;
+  }
+  .bottom-content-3 {
+    gap: 25px;
+  }
+  .price-3 h4 {
+    font-size: 13px !important;
+  }
+  .amount {
+    gap: 9px;
+  }
+  .content-3 h2 {
+    font-size: 14px !important;
+    line-height: 0px !important;
+  }
+  .content-3 p {
+    font-size: 13px !important;
+  }
+  .amount h4 {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-items-2 {
+    transform: translate(20%, -40%);
+  }
+
+  .main-container {
+    background-size: 200%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .menu-items-2{
+    position: absolute;
+    top: 200px;
+  }
+  .top-content-3 h4{
+    font-size: 16px !important;
+  }
+  .menu-items-2 {
+    transform: translate(20%, -20%);
+  }
+
+  .card-3 {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .menu_card-3 .card-3 img {
+    width: 90px;
+    height: 90px;
+  }
+  .menu-items-3 {
+    width: 380px;
+  }
+  .content-3 {
+    gap: 4px;
+  }
+  .bottom-content-3 {
+    gap: 20px;
+  }
+  .price-3 h4 {
+    font-size: 12px !important;
+  }
+  .amount {
+    gap: 9px;
+  }
+  .content-3 h2 {
+    font-size: 12px !important;
+    line-height: 0px !important;
+  }
+  .content-3 p {
+    font-size: 12px !important;
+  }
+  .amount h4 {
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .main h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    font-size: 3.5rem;
+  }
+  .card-3{
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .menu_card-3 .card-3 img{
+    width: 70px;
+    height: 70px;
+  }
+  .menu-items-3{
+     width:320px;
+  }
+  .content-3{
+    gap: 3px;
+  }
+  .bottom-content-3{
+    gap:15px;
+  }
+  .price-3 h4{
+    font-size: 11px !important;
+  }
+  .amount{
+    gap: 8px;
+  }
+  .content-3 h2{
+    font-size: 11px !important;
+    line-height: 0px !important;
+  }
+  .content-3 p{
+    font-size: 11px !important;
+  }
+  .amount h4{
+    font-size: 12px!important;
+  }
+  
+}
+
+@media only screen and (max-width: 530px) {
+  .menu-items-2{
+    position: absolute;
+    top: 300px;
+
+  }
+  .top-content-3 h4{
+    font-size: 14px !important;
+  }
+  .menu-items-2 {
+    transform: translate(3%, -50%);
+  }
+  main .img-2 .gallery-2 {
+    flex-direction: row;
+  }
+  main .image-2 .img-2 .first-img-1 img {
+    height: 50vh;
+    width: 75vw;
+  }
+  main .img-2 .gallery-2 img {
+    height: 110px;
+    width: 80px;
+  }
+
+  .search {
+    margin-left: 20px;
+    align-items: center;
+    gap: 20px;
+  }
+  .search input {
+    padding: 8px 8px;
+    width: 300px;
+  }
+
+  .input-1 {
+    padding-left: 20px;
+    width: 300px;
+  }
+
+  .input-1 input {
+    width: 300px;
+    background: transparent;
+  }
+  .main-container {
+    background-size: 300%;
+  }
+  .locations_input_1 ul li {
+    padding: 8px 8px;
+    width: 300px;
+  }
+  .input-1 ul li {
+    padding: 8px 8px;
+    width: 297px;
+  }
+  .total-3 h6{
+    font-size:14px !important;
+  }
+  .total-3 button{
+    margin-right:25px;
+    font-size: 12px;
+    width: 80px;
+    padding: 4px 6px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .total-3 h6{
+    font-size:13px !important;
+  }
+  .total-3 button{
+    width: 70px;
+  }
+  .menu-items-2 {
+    transform: translate(10%, -50%);
+  }
+  .top-content-3 h4{
+    font-size: 12px !important;
+  }
+  .card-3{
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .menu_card-3 .card-3 img{
+    width: 70x;
+    height: 80px;
+  }
+  .menu-items-3{
+     width:250px;
+  }
+  .content-3{
+    gap: 2px;
+  }
+  .bottom-content-3{
+    gap:12px;
+  }
+  .price-3 h4{
+    font-size: 10px !important;
+  }
+  .amount{
+    gap: 7px;
+  }
+  .content-3 h2{
+    font-size: 10px !important;
+    line-height: 0px !important;
+  }
+  .content-3 p{
+    font-size: 10px !important;
+  }
+  .amount h4{
+    font-size: 11px!important;
+  }
+  .menu-items-2{
+    position: absolute;
+    top: 300px;
+
+  }
+
+}
+
+/* this is optional media query */
+@media only screen and (max-width: 295px) {
+  .main-container {
+    background-size: 400%;
+  }
+}

@@ -1,0 +1,788 @@
+body{
+  max-height: 100vh;
+}
+
+.dark-mode {
+
+  background-color: rgb(41, 39, 39);
+  --body: black;
+  --color:white;
+  transition: 0.5s;
+  --text:#ddd;
+  --blue:rgb(222, 224, 228);
+ --meal_types:#171616;
+ --menu-items:rgba(247, 243, 243, 0.93);
+ --menu-color:black;
+}
+
+.light-mode {
+  background-color: #ddd;
+  --meal_types:#ddd;
+  --color:black;
+  transition: 0.5s;
+  --text:grey;
+  --blue:rgb(34, 49, 92);
+  --menu-items:rgba(5, 5, 5, 0.93);
+  --menu-color:white;
+}
+
+
+
+.meal_types{
+  background:var(--meal_types);
+}
+
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  padding: 30px 0;
+  background-image: linear-gradient(45deg, transparent, #000000dc),
+    url(./assets/food.jpg);
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 50px auto 20px;
+}
+
+/* // for navbar */
+.logo-1{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-1 h2{
+  margin-top: 5px;
+}
+
+.buttons button:nth-child(1){
+  color: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.sun{
+  font-size: 26px;
+  color: orange;
+}
+
+main hr{
+  color:var(--color);
+}
+
+
+/* //navbar end */
+
+
+.main h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+nav{
+  display: flex;
+  width: 100vw;
+  background: rgb(0, 0, 0);
+  justify-content: space-between;
+  padding: 5px 50px 5px 50px;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.buttons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns {
+  margin-right: 8px;
+  padding: 7px 3px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btns:hover{
+  color: red;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.search input {
+  margin-right: 10px;
+  padding: 10px 10px;
+  height: 50px;
+  width: 400px;
+}
+
+.input-1 {
+  border: 1px solid black;
+  padding-left: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+}
+
+.input-1 input {
+  width: 400px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.card-1 {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+.text {
+  color:var(--blue);
+}
+
+.text h1{
+  color: var(--color);
+  
+}
+.text-1 {
+  color: var(--text);
+  font-weight: normal;
+}
+
+
+
+
+/* Here onwards main section starts  */
+
+main {
+  max-width: 90vw;
+  margin: 0 auto 50px;
+}
+.card-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.321);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.img img {
+  height: 190px;
+  width: 170px;
+  margin-right: 10px;
+}
+.texter {
+  margin-left: 20px;
+}
+.mealItems-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+}
+
+
+/* For Locations header.jsx and for first input  */
+
+
+.search{
+  position: relative;
+}
+
+.locations_input_1 ul{
+  position: absolute;
+  top: 55px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+}
+.locations_input_1 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-right: 40px;
+ 
+}
+.locations_input_1 ul li{
+  padding: 10px 10px;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.142);
+  list-style: none;
+  width: 400px;
+  cursor: pointer;
+}
+
+.locations_input_1 ul li:hover{
+  background: rgba(0, 0, 0, 0.717);
+  color: white;
+}
+
+
+/* // This is for second input which are getting restaurant by location id */
+
+.input-1 {
+  position: relative;
+}
+.input-1 ul{
+  position: absolute;
+  top: 55px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+}
+.input-1 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-right: 40px;
+ 
+}
+.input-1 ul li{
+  padding: 10px 10px;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.142);
+  list-style: none;
+  width: 400px;
+  cursor: pointer;
+}
+.input-1 ul li:hover{
+  background: rgba(0, 0, 0, 0.717);
+  color: white;
+}
+
+.input-1 ul li img{
+  width: 40px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin: 0 20px 0 5px;
+}
+
+
+
+
+/* ------------------topSection.jsx ------------------ */
+
+main{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90vw;
+}
+
+
+.image-2{
+  width: 90vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+
+/* // menu-items */
+
+.menu-items-2{
+  z-index: 100;
+  position: absolute;
+  top: 100px;
+  transform: translateX(70%);
+
+}
+
+main .img-2{
+  display: flex;
+  gap: 10px;
+}
+.image-2 h1{
+  color: var(--color);
+
+}
+main .image-2 .img-2 .first-img-1{
+  width:73vw;
+}
+main .image-2 .img-2 .first-img-1 img{
+  width: 73vw;
+  height: 70vh;
+   object-fit:cover;
+   filter: contrast(105%);
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+}
+
+main .img-2 .gallery-2{
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+main .img-2 .gallery-2 img{
+  cursor: pointer;
+  width:100%;
+  height:138px;
+  object-fit: cover;
+}
+
+
+
+
+/* ----------------- bottomSection.jsx------------------------ */
+
+.slider-2{
+ display: flex;
+ gap: 30px;
+ position: relative;
+}
+
+.moving{
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: rgb(252, 6, 6);
+  border-radius: 5px;
+  top: 50px;
+  left: 25px;
+  transition: all 0.4s;
+}
+
+.slider-2 button{
+  padding:10px 14px;
+  font-size: 20px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  color: var(--text);
+}
+
+.info-2{
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  min-height: 400px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.overview_contcat{
+  position: absolute;
+  display: flex;
+  height: 600px;
+   width: 800px;
+   transform: translateX(0);
+   transition: all 0.4s;
+
+}
+.overview-2, .contact-2{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+}
+
+.seconday-menu-item-2 hr{
+  margin: 40px 0 ;
+}
+.overview-2, .contact-2 {
+  color: var(--color);
+}
+.overview-2 h1{
+  color:var(--blue);
+}
+.rating-2 span:nth-child(2){
+  color: rgb(255, 51, 0);
+  font-size: 20px;
+}
+
+.contact-2 span{
+  margin-right:6px;
+}
+.contact-2{
+  width: 400px;
+}
+
+.translate{
+  transform: translateX(-50%);
+}
+.translate-1{
+  transform: translateX(180%);
+}
+
+
+
+/* mneu-items.jsx */
+
+
+.menu-2{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content:flex-end;
+}
+.menu-2 button{
+  margin-right: 50px;
+  width: 100px;
+  background: red;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+}
+
+.card-3{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.menu_card-3 h3{
+  font-size: 25px !important;
+}
+.top-content-3 h4{
+  font-size: 20px !important;
+}
+
+.menu_card-3 .card-3 img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.menu-items-3{
+  background: var(--menu-items);
+  color: var(--menu-color);
+  padding: 10px;
+  border-radius: 2px;
+   width: 35vw;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+}
+.menu-items-3 hr{
+  color: red;
+  opacity: 0.2;
+}
+
+.content-3{
+  display: flex;
+  flex-direction: column;
+  gap: px;
+}
+.bottom-content-3{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 30px;
+}
+.price-3{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.price-3 h4{
+  font-size: 15px !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.amount{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+}
+.amount button{
+  padding: 2px 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 0, 0, 0.89);
+  color: white;
+  border-radius: 2px;
+}
+.content-3 h2{
+  font-size: 15px !important;
+  line-height: 0px !important;
+}
+.content-3 p{
+  font-size: 14px !important;
+}
+.amount h4{
+  font-size: 15px!important;
+}
+.total-3 h6{
+  font-size:18px !important;
+}
+.total-3{
+  display: flex;
+  justify-content: space-between;
+}
+.total-3 button{
+  margin-right:30px;
+  width: 100px;
+  background: red;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+}
+
+.menu_card-3 .closing-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_card-3 .closing-3 button{
+  padding:3px 5px;
+  border: none;
+  outline: none;
+  background: red;
+  border-radius: 2px;
+  color: white;
+  margin-right: 15px;
+}
+
+
+
+
+
+/* // Forms  */
+
+
+
+
+
+
+
+.registration-form-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image:url(./assets/food.jpg);
+  position: relative;
+  z-index: 1;
+
+  /* background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+  background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); 
+   linear-gradient(45deg,transparent 10%, #000000bb),
+  */
+}
+.registration-form-4::after{
+position: absolute;
+content: "";
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.506);
+z-index: -1;
+}
+.form-4{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  min-height: 40vh;
+  width: 430px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.031);
+  margin-bottom: 100px;
+}
+
+.form-4 input{
+  border: none;
+  outline: none;
+  padding: 11px 20px;
+  width: 390px;
+  border-radius: 30px;
+  caret-color: rgb(0, 0, 0);
+   background: rgba (255, 255,255, 1);
+  color: rgb(46, 49, 54);
+
+}
+
+.form-4 .button-4{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.button-4 h6{
+color: rgba(182, 189,201, 1);
+}
+.form-4 .button-4 button{
+  height: 40px;
+ width: 100%;
+ border:1px solid rgba(250, 250, 250, 0.873);
+ background: transparent;
+ color: white;
+ border-radius: 30px;
+}
+
+.form-4 input:focus{
+  outline: none;
+}
+
+
+
+.form-4 h6{
+  color: rgb(226, 222, 222);
+}
+
+.form-4 h6 span{
+  color: white;
+  cursor: pointer;
+}
+.text-4{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.text-4 h5{
+  cursor: pointer;
+}
+.text-4 h5:nth-child(2){
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 18px !important;
+  padding: 7px 10px;
+  text-align: center;
+  width: 120px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.text-4 h5:nth-child(2):hover{
+  border: 1px solid red;
+  color: red;
+}
+
+
+/* //cancel.jsx  */
+
+.cancel-6{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error, .success{
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.error h1{
+  color: var(--color);
+  font-size: 5rem;
+}
+.error p{
+  font-size: 1.2rem;
+  color: var(--color);
+
+}
+.error h2{
+  color: rgba(240, 98,87, 1);
+  font-size: 7rem;
+}
+.error button{
+  color: white;
+  padding: 8px 12px;
+  width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: rgba(240, 98,87, 1);
+}
+.success h1{
+  color: var(--color);
+  font-size: 5rem;
+}
+.success p{
+  font-size: 1.2rem;
+  color: var(--color);
+
+}
+.success h2{
+  color: rgba(23, 166,150, 1);
+  font-size: 7rem;
+}
+
+.success button{
+  color: white;
+  padding: 8px 12px;
+  width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background:rgba(23, 166,150, 1);
+}
